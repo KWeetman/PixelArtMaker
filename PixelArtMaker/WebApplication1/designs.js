@@ -7,7 +7,6 @@ $(document).ready(function () {
         GetGridInputDimensions();
         console.log("creating grid");
         makeGrid();
-        console.log("Done");
     });
 });
 
