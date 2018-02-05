@@ -17,26 +17,7 @@ $("pixelCanvas").on('click', 'td', function (event) {
     var color = $("#colorPicker").val();
     $(this).css('background-color', color);
 });
-
-// $(document).ready(function (event) {
-//     $("SaveDesign").on('click', function() {
-//         console.log("Clicked");
-//         SaveDesign();
-//     });
-// });
-
 //Gets the row and col selection from the webpage.
-function GetGridInputDimensions() {
-    cols = $('#inputHeight').val();
-    rows = $('#inputWidth').val();
-}
-
-function ClearGrid() {
-    var parent = document.getElementById('pixelCanvas');
-    while(parent.hasChildNodes()) {
-        parent.removeChild(parent.firstChild);
-    }
-}
 
 function MakeGrid() {
     console.log(rows, cols);
