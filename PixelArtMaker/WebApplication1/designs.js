@@ -19,6 +19,13 @@ $("pixelCanvas").on('click', 'td', function (event) {
 });
 //Gets the row and col selection from the webpage.
 
+function clearGrid() {
+var parent = document.getElementById("pixelCanvas");
+    while (parent.hasChildNodes()) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
 function MakeGrid() {
     console.log(rows, cols);
     //Creates a Table object from the Table "PixelCanvas" element ID.
